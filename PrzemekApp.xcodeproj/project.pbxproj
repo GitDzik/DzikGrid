@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		232CC6C0244933E600E65DDB /* PanGestureInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232CC6BF244933E600E65DDB /* PanGestureInterpreter.swift */; };
+		23561FFC23E9F80D00E3F676 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23561FFB23E9F80D00E3F676 /* Matrix.swift */; };
+		2356200423F09A7900E3F676 /* LongpressActionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356200323F09A7800E3F676 /* LongpressActionTVC.swift */; };
+		23861379225D6E6D0015702A /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23861378225D6E6D0015702A /* Board.swift */; };
+		23C1D05F244667B100151BCB /* GridSpaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1D05E244667B100151BCB /* GridSpaceManager.swift */; };
+		23C1D0612447DECF00151BCB /* ResizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1D0602447DECF00151BCB /* ResizeManager.swift */; };
+		23D59CDD225424AD0034B51D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D59CDC225424AD0034B51D /* AppDelegate.swift */; };
+		23D59CDF225424AD0034B51D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D59CDE225424AD0034B51D /* ViewController.swift */; };
+		23D59CE2225424AD0034B51D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D59CE0225424AD0034B51D /* Main.storyboard */; };
+		23D59CE5225424AD0034B51D /* PrzemekApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23D59CE3225424AD0034B51D /* PrzemekApp.xcdatamodeld */; };
+		23D59CE7225424B00034B51D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D59CE6225424B00034B51D /* Assets.xcassets */; };
+		23D59CEA225424B00034B51D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D59CE8225424B00034B51D /* LaunchScreen.storyboard */; };
+		23D59CF5225424B00034B51D /* PrzemekAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D59CF4225424B00034B51D /* PrzemekAppTests.swift */; };
+		23D59D00225424B00034B51D /* PrzemekAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D59CFF225424B00034B51D /* PrzemekAppUITests.swift */; };
+		23D59D12225427F10034B51D /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D59D11225427F10034B51D /* Tile.swift */; };
+		23D59D1422557C100034B51D /* TileResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D59D1322557C100034B51D /* TileResizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23D59CF1225424B00034B51D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23D59CD1225424AD0034B51D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23D59CD8225424AD0034B51D;
+			remoteInfo = PrzemekApp;
+		};
+		23D59CFC225424B00034B51D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23D59CD1225424AD0034B51D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23D59CD8225424AD0034B51D;
+			remoteInfo = PrzemekApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		232CC6BF244933E600E65DDB /* PanGestureInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureInterpreter.swift; sourceTree = "<group>"; };
+		23561FFB23E9F80D00E3F676 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		2356200323F09A7800E3F676 /* LongpressActionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongpressActionTVC.swift; sourceTree = "<group>"; };
+		23861378225D6E6D0015702A /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		23C1D05E244667B100151BCB /* GridSpaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSpaceManager.swift; sourceTree = "<group>"; };
+		23C1D0602447DECF00151BCB /* ResizeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizeManager.swift; sourceTree = "<group>"; };
+		23D59CD9225424AD0034B51D /* PrzemekApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrzemekApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D59CDC225424AD0034B51D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23D59CDE225424AD0034B51D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23D59CE1225424AD0034B51D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23D59CE4225424AD0034B51D /* PrzemekApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PrzemekApp.xcdatamodel; sourceTree = "<group>"; };
+		23D59CE6225424B00034B51D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23D59CE9225424B00034B51D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23D59CEB225424B00034B51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D59CF0225424B00034B51D /* PrzemekAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrzemekAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D59CF4225424B00034B51D /* PrzemekAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrzemekAppTests.swift; sourceTree = "<group>"; };
+		23D59CF6225424B00034B51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D59CFB225424B00034B51D /* PrzemekAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrzemekAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D59CFF225424B00034B51D /* PrzemekAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrzemekAppUITests.swift; sourceTree = "<group>"; };
+		23D59D01225424B00034B51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D59D11225427F10034B51D /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		23D59D1322557C100034B51D /* TileResizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileResizer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23D59CD6225424AD0034B51D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23D59CED225424B00034B51D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23D59CF8225424B00034B51D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23D59CD0225424AD0034B51D = {
+			isa = PBXGroup;
+			children = (
+				23D59CDB225424AD0034B51D /* PrzemekApp */,
+				23D59CF3225424B00034B51D /* PrzemekAppTests */,
+				23D59CFE225424B00034B51D /* PrzemekAppUITests */,
+				23D59CDA225424AD0034B51D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23D59CDA225424AD0034B51D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23D59CD9225424AD0034B51D /* PrzemekApp.app */,
+				23D59CF0225424B00034B51D /* PrzemekAppTests.xctest */,
+				23D59CFB225424B00034B51D /* PrzemekAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23D59CDB225424AD0034B51D /* PrzemekApp */ = {
+			isa = PBXGroup;
+			children = (
+				23D59CDC225424AD0034B51D /* AppDelegate.swift */,
+				23D59D11225427F10034B51D /* Tile.swift */,
+				23861378225D6E6D0015702A /* Board.swift */,
+				23D59D1322557C100034B51D /* TileResizer.swift */,
+				23D59CDE225424AD0034B51D /* ViewController.swift */,
+				23D59CE0225424AD0034B51D /* Main.storyboard */,
+				23D59CE6225424B00034B51D /* Assets.xcassets */,
+				23D59CE8225424B00034B51D /* LaunchScreen.storyboard */,
+				23D59CEB225424B00034B51D /* Info.plist */,
+				23D59CE3225424AD0034B51D /* PrzemekApp.xcdatamodeld */,
+				23561FFB23E9F80D00E3F676 /* Matrix.swift */,
+				2356200323F09A7800E3F676 /* LongpressActionTVC.swift */,
+				23C1D05E244667B100151BCB /* GridSpaceManager.swift */,
+				23C1D0602447DECF00151BCB /* ResizeManager.swift */,
+				232CC6BF244933E600E65DDB /* PanGestureInterpreter.swift */,
+			);
+			path = PrzemekApp;
+			sourceTree = "<group>";
+		};
+		23D59CF3225424B00034B51D /* PrzemekAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				23D59CF4225424B00034B51D /* PrzemekAppTests.swift */,
+				23D59CF6225424B00034B51D /* Info.plist */,
+			);
+			path = PrzemekAppTests;
+			sourceTree = "<group>";
+		};
+		23D59CFE225424B00034B51D /* PrzemekAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23D59CFF225424B00034B51D /* PrzemekAppUITests.swift */,
+				23D59D01225424B00034B51D /* Info.plist */,
+			);
+			path = PrzemekAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23D59CD8225424AD0034B51D /* PrzemekApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23D59D04225424B00034B51D /* Build configuration list for PBXNativeTarget "PrzemekApp" */;
+			buildPhases = (
+				23D59CD5225424AD0034B51D /* Sources */,
+				23D59CD6225424AD0034B51D /* Frameworks */,
+				23D59CD7225424AD0034B51D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrzemekApp;
+			productName = PrzemekApp;
+			productReference = 23D59CD9225424AD0034B51D /* PrzemekApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23D59CEF225424B00034B51D /* PrzemekAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23D59D07225424B00034B51D /* Build configuration list for PBXNativeTarget "PrzemekAppTests" */;
+			buildPhases = (
+				23D59CEC225424B00034B51D /* Sources */,
+				23D59CED225424B00034B51D /* Frameworks */,
+				23D59CEE225424B00034B51D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23D59CF2225424B00034B51D /* PBXTargetDependency */,
+			);
+			name = PrzemekAppTests;
+			productName = PrzemekAppTests;
+			productReference = 23D59CF0225424B00034B51D /* PrzemekAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23D59CFA225424B00034B51D /* PrzemekAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23D59D0A225424B00034B51D /* Build configuration list for PBXNativeTarget "PrzemekAppUITests" */;
+			buildPhases = (
+				23D59CF7225424B00034B51D /* Sources */,
+				23D59CF8225424B00034B51D /* Frameworks */,
+				23D59CF9225424B00034B51D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23D59CFD225424B00034B51D /* PBXTargetDependency */,
+			);
+			name = PrzemekAppUITests;
+			productName = PrzemekAppUITests;
+			productReference = 23D59CFB225424B00034B51D /* PrzemekAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23D59CD1225424AD0034B51D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Konrad Łęski";
+				TargetAttributes = {
+					23D59CD8225424AD0034B51D = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
+					};
+					23D59CEF225424B00034B51D = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
+						TestTargetID = 23D59CD8225424AD0034B51D;
+					};
+					23D59CFA225424B00034B51D = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
+						TestTargetID = 23D59CD8225424AD0034B51D;
+					};
+				};
+			};
+			buildConfigurationList = 23D59CD4225424AD0034B51D /* Build configuration list for PBXProject "PrzemekApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23D59CD0225424AD0034B51D;
+			productRefGroup = 23D59CDA225424AD0034B51D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23D59CD8225424AD0034B51D /* PrzemekApp */,
+				23D59CEF225424B00034B51D /* PrzemekAppTests */,
+				23D59CFA225424B00034B51D /* PrzemekAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23D59CD7225424AD0034B51D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D59CEA225424B00034B51D /* LaunchScreen.storyboard in Resources */,
+				23D59CE7225424B00034B51D /* Assets.xcassets in Resources */,
+				23D59CE2225424AD0034B51D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23D59CEE225424B00034B51D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23D59CF9225424B00034B51D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23D59CD5225424AD0034B51D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23561FFC23E9F80D00E3F676 /* Matrix.swift in Sources */,
+				23D59D1422557C100034B51D /* TileResizer.swift in Sources */,
+				23D59D12225427F10034B51D /* Tile.swift in Sources */,
+				2356200423F09A7900E3F676 /* LongpressActionTVC.swift in Sources */,
+				23D59CDF225424AD0034B51D /* ViewController.swift in Sources */,
+				23D59CDD225424AD0034B51D /* AppDelegate.swift in Sources */,
+				23C1D05F244667B100151BCB /* GridSpaceManager.swift in Sources */,
+				232CC6C0244933E600E65DDB /* PanGestureInterpreter.swift in Sources */,
+				23861379225D6E6D0015702A /* Board.swift in Sources */,
+				23D59CE5225424AD0034B51D /* PrzemekApp.xcdatamodeld in Sources */,
+				23C1D0612447DECF00151BCB /* ResizeManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23D59CEC225424B00034B51D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D59CF5225424B00034B51D /* PrzemekAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23D59CF7225424B00034B51D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D59D00225424B00034B51D /* PrzemekAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23D59CF2225424B00034B51D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23D59CD8225424AD0034B51D /* PrzemekApp */;
+			targetProxy = 23D59CF1225424B00034B51D /* PBXContainerItemProxy */;
+		};
+		23D59CFD225424B00034B51D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23D59CD8225424AD0034B51D /* PrzemekApp */;
+			targetProxy = 23D59CFC225424B00034B51D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23D59CE0225424AD0034B51D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23D59CE1225424AD0034B51D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23D59CE8225424B00034B51D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23D59CE9225424B00034B51D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23D59D02225424B00034B51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23D59D03225424B00034B51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23D59D05225424B00034B51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SGBN3SU2S2;
+				INFOPLIST_FILE = PrzemekApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.PrzemekApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23D59D06225424B00034B51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SGBN3SU2S2;
+				INFOPLIST_FILE = PrzemekApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.PrzemekApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23D59D08225424B00034B51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrzemekAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.PrzemekAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrzemekApp.app/PrzemekApp";
+			};
+			name = Debug;
+		};
+		23D59D09225424B00034B51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrzemekAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.PrzemekAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrzemekApp.app/PrzemekApp";
+			};
+			name = Release;
+		};
+		23D59D0B225424B00034B51D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrzemekAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.PrzemekAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrzemekApp;
+			};
+			name = Debug;
+		};
+		23D59D0C225424B00034B51D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrzemekAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.PrzemekAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrzemekApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23D59CD4225424AD0034B51D /* Build configuration list for PBXProject "PrzemekApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D59D02225424B00034B51D /* Debug */,
+				23D59D03225424B00034B51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23D59D04225424B00034B51D /* Build configuration list for PBXNativeTarget "PrzemekApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D59D05225424B00034B51D /* Debug */,
+				23D59D06225424B00034B51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23D59D07225424B00034B51D /* Build configuration list for PBXNativeTarget "PrzemekAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D59D08225424B00034B51D /* Debug */,
+				23D59D09225424B00034B51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23D59D0A225424B00034B51D /* Build configuration list for PBXNativeTarget "PrzemekAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D59D0B225424B00034B51D /* Debug */,
+				23D59D0C225424B00034B51D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		23D59CE3225424AD0034B51D /* PrzemekApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				23D59CE4225424AD0034B51D /* PrzemekApp.xcdatamodel */,
+			);
+			currentVersion = 23D59CE4225424AD0034B51D /* PrzemekApp.xcdatamodel */;
+			path = PrzemekApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 23D59CD1225424AD0034B51D /* Project object */;
+}
